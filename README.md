@@ -35,8 +35,8 @@ Each test was repeated 10 times and averaged.
 
 | Operation              | Delox (avg) | Native command (avg) |
 |------------------------|-------------|-----------------------|
-| File deletion          | 65.83 ms    | `del`: 102.98 ms      |
-| Directory deletion (100 files) | 373.50 ms   | `rmdir /S /Q`: 472.71 ms |
+| File deletion          | 33.63 ms    | `del`: 156.19 ms      |
+| Directory deletion (100 files) | 596.18 ms   | `rmdir /S /Q`: 750.40 ms |
 
 ### Notes
 - Results vary depending on filesystem caching and system load.  
