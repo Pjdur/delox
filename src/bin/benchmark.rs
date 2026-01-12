@@ -28,7 +28,7 @@ fn main() {
     let file = "benchfile.txt";
     run_many("Delox file delete", 10, || {
         recreate_test_file(file);
-        Command::new("target/debug/delox").arg(file).status().unwrap();
+        Command::new("target/release/delox").arg(file).status().unwrap();
     });
 
     run_many("del file delete", 10, || {
