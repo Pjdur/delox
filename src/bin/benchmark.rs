@@ -39,7 +39,7 @@ fn main() {
     let dir = "benchdir";
     run_many("Delox dir delete", 10, || {
         recreate_test_dir(dir, 100);
-        Command::new("target/debug/delox").arg(dir).status().unwrap();
+        Command::new("target/release/delox").arg(dir).status().unwrap();
     });
 
     run_many("rmdir dir delete", 10, || {
